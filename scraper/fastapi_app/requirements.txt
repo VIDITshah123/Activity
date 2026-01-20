@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+flask
+mysql-connector-python
+python-dotenv
+selenium
+webdriver-manager

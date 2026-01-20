@@ -1,0 +1,20 @@
+<form method="POST">
+    <input name="keyword" placeholder="Enter product name" required>
+    <button>Search</button>
+</form>
+
+<p>Source: {{ source }}</p>
+
+<table border="1">
+<tr>
+<th>Name</th><th>Price</th><th>Rating</th><th>Delivery</th>
+</tr>
+{% for p in products %}
+<tr>
+<td>{{ p.product_name or p.name }}</td>
+<td>{{ p.price }}</td>
+<td>{{ p.rating }}</td>
+<td>{{ p.delivery_time or p.delivery }}</td>
+</tr>
+{% endfor %}
+</table>
